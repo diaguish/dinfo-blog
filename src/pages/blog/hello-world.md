@@ -5,7 +5,7 @@ description: "Why I created this blog, what you'll find here, and who I am."
 date: "May 2025"
 tag: "Meta"
 ---
-If you're a developer, you know what *Hello World* means — it's the first thing you run when you start something new. So it felt right to name this first post exactly that.
+git add .If you're a developer, you know what *Hello World* means — it's the first thing you run when you start something new. So it felt right to name this first post exactly that.
 
 ## Why Dinfo ?
 
