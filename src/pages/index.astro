@@ -1,11 +1,100 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dinfo — The info, by Diago</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
 
-<Layout>
-	<Welcome />
-</Layout>
+    <nav>
+      <span class="logo">&gt;_D</span>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/blog">Articles</a>
+        <a href="/about">About</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <h1>The info,<br/><em>by Diago.</em></h1>
+        <p>Exploring AI, cybersecurity, dev & tech — one byte at a time.</p>
+        <a href="/blog" class="btn">Read articles →</a>
+      </section>
+    </main>
+
+  </body>
+</html>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: #F1E8C7;
+    color: #2d2d2d;
+    font-family: 'Inter', sans-serif;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-bottom: 1px solid #9CA76440;
+  }
+
+  .logo {
+    font-family: 'Courier New', monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #9CA764;
+  }
+
+  .nav-links a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 0.95rem;
+  }
+
+  .nav-links a:hover { color: #9CA764; }
+
+  .hero {
+    max-width: 700px;
+    margin: 8rem auto;
+    padding: 0 2rem;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+  }
+
+  em { color: #9CA764; font-style: normal; }
+
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    background: #9CA764;
+    color: #F1E8C7;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .btn:hover { background: #8a9558; }
+</style>
